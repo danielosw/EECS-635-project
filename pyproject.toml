@@ -1,0 +1,16 @@
+[project]
+name = "eecs-635-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "danielosw", email = "65432065+danielosw@users.noreply.github.com" },
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "matplotlib>=3.8,<4",
+    "pillow>=10,<12",
+    "numpy>=1.26,<2",
+    "tensorflow==2.19.1",
+    "tf-keras==2.19.0",
+]
