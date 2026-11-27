@@ -126,7 +126,7 @@ def main() -> None:
     model = build_model(train_generator.num_classes)
 
     callbacks = [
-        EarlyStopping(monitor='val_loss', patience=15, restore_best_weights=True),
+        EarlyStopping(monitor='val_loss', patience=8, restore_best_weights=True),
         ModelCheckpoint(str(args.output_dir / 'asl_model_boosted.keras'),
                         monitor='val_accuracy', save_best_only=True),
         ReduceLROnPlateau(monitor='val_loss', factor=0.5, patience=3),
