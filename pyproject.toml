@@ -13,4 +13,10 @@ dependencies = [
     "numpy>=1.26,<2",
     "tensorflow==2.19.1",
     "tf-keras==2.19.0",
+    "scipy>=1.17.1",
+]
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.40.2",
 ]
